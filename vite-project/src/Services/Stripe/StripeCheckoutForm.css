@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*{
+    font-family: 'Exo 2', sans-serif !important;
+}
+
+
+.checkout-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f6f9fc; */
+  }
+  
+  #payment-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  #payment-element {
+    margin-bottom: 1rem;
+  }
+  
+  #submit {
+    width: 100%;
+    background-color: grey;
+    opacity: 80%;
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+
+  #payment-form {
+    border: #000000 solid 1px;
+    border-radius: var(--radius);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%),
+      0 30px 60px -30px rgb(0 0 0 / 30%);
+  }
+  
+  #messages {
+    font-family: 'Exo 2', sans-serif ;
+    display: none; /* hide initially, then show once the first message arrives */
+    background-color: white;
+    color: #000000;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--radius);
+    font-size: 0.7em;
+  }
+  
+  #submit:hover {
+    background-color: black;
+  }
+  
+  #submit:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+  }
+  
+  #payment-message {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  

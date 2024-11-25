@@ -1,0 +1,26 @@
+/* Register.css */
+.body {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        max-width: 90%;
+        padding: 1rem;
+        position: static;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .body {
+        padding: 0.5rem;
+    }
+}

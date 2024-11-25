@@ -1,0 +1,83 @@
+.cart-card {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* margin: 10px; */
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    align-items: center; /* Add this line */
+    position: relative;
+    
+  }  
+   
+  .cart-image {
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+    flex-grow: 1; /* Add this line */
+  }
+  
+  .cart-image img {
+    width: 300px; /* Reduced width */
+    height: auto;
+    margin-right: 10px; /* Reduced margin */
+  }
+  .cart-details {
+    max-width: 300px; /* Reduced max-width */
+    max-height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px; /* Added padding-left */
+  }
+  
+  .cart-remove {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Add this line */
+    bottom: 20px; /* Add this line */
+    right: 10px; /* Add this line */
+  }
+  
+  /* Add a media query for smaller screens */
+  @media (max-width: 1200px) {
+    .cart-card {
+      /* margin: 10px; */
+      /* padding: 10px; */
+      width: 100%;
+      flex-direction: row; /* Change the flex direction to column */
+    }
+  
+    .cart-image img{
+      display: flex;
+      justify-content: center;
+      width: 180px; /* Add this line */
+      height:auto;
+      margin-left: 30px;
+    }
+  
+    .cart-details {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+
+
+    }
+    .cart-remove {
+      display: flex;
+      align-items: center;
+      /* position: absolute; */ /* Add this line */
+      bottom: 20px; /* Add this line */
+      right: 10px; /* Add this line */
+    }
+    
+  }
+  

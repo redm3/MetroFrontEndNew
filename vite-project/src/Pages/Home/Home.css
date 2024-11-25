@@ -1,0 +1,44 @@
+.product-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    height: auto; /* Remove fixed height */
+    display: flex;
+    flex-direction: column; /* Ensure flexible layout */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto; /* Adjust height dynamically */
+    object-fit: cover;
+  }
+  
+  .product-price {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 19px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem; /* Make the text a bit smaller */
+  }
+  
+  .product-image-hover {
+    transition: transform 0.3s;
+  }
+  
+  .product-image-hover:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .product-container:hover .product-price {
+    display: block;
+  }
+  
