@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
-//import * as jwt_decode from 'jwt-decode';
 import jwt_decode from 'jwt-decode';
+
+
 function UserOrders() {
     const [orders, setOrders] = useState([]);
-
-
 
     const fetchUserOrders = async () => {
         // Decode the JWT token and extract the userId
         const token = localStorage.getItem('token');
         const decodedToken = jwt_decode(token);
         const userId = decodedToken.userObjectId;
+        console.log(decodedToken);
         try {
             const response = await axios.get(`https://metro-back-end.vercel.app/api/orders/${userId}`);
             setOrders(response.data.data);
@@ -84,6 +84,7 @@ function UserOrders() {
                     pageSizeOptions={[10]}
                     checkboxSelection
                     disableRowSelectionOnClick
+                    autoHeight
                 />
             </Box>
         </div>

@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
+
 import Home from "../../Pages/Home/Home";
 import Store from "../../Pages/Store/Store";
 import ProductDetailsPage from "../../Pages/Products/ProductDetailsPage";
@@ -41,11 +42,13 @@ function AppRoutes(props) {
         <Route path="/store" element={<Store />} />
         <Route path="/products/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<Cart />} />
+
         <Route path="/login" element={<Login {...props} />} />
         <Route path="/checkout" element={<Checkout orderData={orderData} setOrderData={orderwrapper} /* setTotalPrice={setTotalPrice} */ />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<ProtectedRoute adminOnly={false}><Profile /></ProtectedRoute>} />
         <Route path="/Admin" element={<ProtectedRoute adminOnly={true}><Admin /></ProtectedRoute>} />
+        
         <Route path="/payment" element={<Payment orderData={orderData} />} />
         <Route path="/checkout" element={<Checkout orderData={orderData} setOrderData={orderwrapper} />} />
         <Route path="/completion" element={<Completion />} />
