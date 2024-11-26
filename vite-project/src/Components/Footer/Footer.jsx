@@ -23,7 +23,7 @@ function Footer() {
             Metro
           </Typography>
           <div>
-          Your ultimate sneaker destination in Auckland! Providing exclusive kicks, unbeatable deals, and top-notch service. Elevate your sneaker game with Metro! 👟
+          Your ultimate online streetware & collectable destination in Auckland! Providing exclusive kicks, unbeatable deals, and top-notch service. Elevate your collectable game with Metro! 👟
           </div>
         </Box>
 
