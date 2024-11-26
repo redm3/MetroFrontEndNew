@@ -76,7 +76,7 @@ function Store() {
       <h1>Store</h1>
       <h3>Check out our current stock</h3>
       <div className="category-buttons">
-        {['All', 'Off-White', 'Nike', 'Yeezy', 'Jordan', 'Louis Vuitton', 'Travis Scott', 'Supreme' , 'Labubu', ' One Piece' , 'Comics'].map((category) => (
+        {['All', 'Off-White', 'Nike', 'Yeezy', 'Jordan', 'Louis Vuitton', 'Travis Scott', 'Supreme' , 'Labubu', 'Cards' , 'Comics', 'CDs', 'Clothing'].map((category) => (
           <Button
             key={category}
             variant="contained"
