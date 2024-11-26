@@ -11,8 +11,6 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
-
-
 function getCategoryClassName(category) {
   return category.replace(/\s+/g, '-').toLowerCase();
 }
@@ -78,7 +76,7 @@ function Store() {
       <h1>Store</h1>
       <h3>Check out our current stock</h3>
       <div className="category-buttons">
-        {['All', 'Off-White', 'Nike', 'Yeezy', 'Jordan', 'Louis Vuitton', 'Travis Scott', 'Supreme' , 'Labubu', ' One Piece'].map((category) => (
+        {['All', 'Off-White', 'Nike', 'Yeezy', 'Jordan', 'Louis Vuitton', 'Travis Scott', 'Supreme' , 'Labubu', ' One Piece' , 'Comics'].map((category) => (
           <Button
             key={category}
             variant="contained"
